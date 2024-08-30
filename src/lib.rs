@@ -400,8 +400,8 @@ pub mod kv;
 #[cfg(target_has_atomic = "ptr")]
 use std::sync::atomic::{AtomicUsize, Ordering};
 
-#[cfg(not(target_has_atomic = "ptr"))]
-use std::cell::Cell;
+// #[cfg(not(target_has_atomic = "ptr"))]
+// use std::cell::Cell;
 #[cfg(not(target_has_atomic = "ptr"))]
 use std::sync::atomic::Ordering;
 
